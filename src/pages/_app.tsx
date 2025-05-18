@@ -5,12 +5,14 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>NeoSapiens | Teste</title>
+        <title>NeoSapiens | Teste de Layout</title>
       </Head>
-      <div style={{ padding: '20px', textAlign: 'center' }}>
-        <h1>Teste de Renderização</h1>
-        <p>Se você está vendo esta mensagem, a renderização básica está funcionando.</p>
-      </div>
+      <Layout>
+        <div style={{ padding: '100px 20px', textAlign: 'center' }}>
+          <h1>Teste do Layout</h1>
+          <p>Se você está vendo esta mensagem dentro do layout com cabeçalho e rodapé, o layout está funcionando.</p>
+        </div>
+      </Layout>
     </>
   );
 }
