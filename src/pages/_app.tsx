@@ -1,8 +1,16 @@
-import '@/styles/globals.css'; // Isso importa o seu CSS
-import '@/styles/questionnaire-animations.css'; // Adicione esta linha
+import Head from 'next/head';
+import Layout from '../components/layout/Layout';
 
-import type { AppProps } from 'next/app';
-
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+export default function Home() {
+  return (
+    <>
+      <Head>
+        <title>NeoSapiens | Teste</title>
+      </Head>
+      <div style={{ padding: '20px', textAlign: 'center' }}>
+        <h1>Teste de Renderização</h1>
+        <p>Se você está vendo esta mensagem, a renderização básica está funcionando.</p>
+      </div>
+    </>
+  );
 }
